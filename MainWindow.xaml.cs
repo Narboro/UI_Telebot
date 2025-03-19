@@ -93,7 +93,7 @@ namespace UI_Telebot
 
         protected override void OnClosed(EventArgs e)
         {
-            //icon.Dispose(); // Dispose of the notify icon when closing the application
+            icon.Dispose(); // Dispose of the notify icon when closing the application
             base.OnClosed(e);
         }
 
