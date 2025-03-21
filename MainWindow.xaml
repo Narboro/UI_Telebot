@@ -16,7 +16,7 @@
             <TextBlock Text="Брахмачари-Ашрама" FontSize="24" Foreground="#52DA1F" FontWeight="Bold" TextAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock Text="г. Санкт-Петербург" FontSize="24" Foreground="#52DA1F" FontWeight="Bold" TextAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock Text="{Binding Path=Bindings.BotState, Mode=TwoWay, NotifyOnSourceUpdated=True}" Foreground="#52DA1F" Margin="10 10 10 0" FontSize="20" FontWeight="Bold" TextAlignment="Left" TextWrapping="Wrap"/>
-            <Button Content="{Binding Path=Bindings.ButtonName, Mode=TwoWay, NotifyOnSourceUpdated=True}" Margin="10 0 0 25" Height="60" FontSize="24" Background="Beige" Foreground="#3F2DCA" FontWeight="Bold" Click="StartBot" FontFamily="Segoe Print" Name="btn_start">
+            <Button Content="{Binding Path=Bindings.ButtonName, Mode=TwoWay, NotifyOnSourceUpdated=True}" Margin="10 0 10 25" Height="60" FontSize="24" Background="Beige" Foreground="#3F2DCA" FontWeight="Bold" Click="StartBot" FontFamily="Segoe Print" Name="btn_start">
 
                 <Button.Resources>
                     <Style TargetType="Border">

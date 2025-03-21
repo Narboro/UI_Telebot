@@ -124,10 +124,10 @@ namespace UI_Telebot
             Exit(new object(), new EventArgs());
         }
 
-        private void CopyBooksBase(object sender, RoutedEventArgs e)
+        public void CopyBooksBase(object sender, RoutedEventArgs e)
         {
-            String sourceFilePath = (_configuration["BotConfiguration:LIBRARY_FILEPATH"] ?? "") + (_configuration["BotConfiguration:LIBRARY_FILENAME"] ?? "");
-            String destinationFilePath = (_configuration["BotConfiguration:LIBRARY_FILEPATH"] ?? "") + (_configuration["BotConfiguration:LIBRARY_FILENAME"]?.Replace(".xlsx", DateTime.Now.ToString("_yyyy-MM-dd_HH-mm-ss") + ".xlsx") ?? "");
+            string sourceFilePath = (_configuration["BotConfiguration:LIBRARY_FILEPATH"] ?? "") + (_configuration["BotConfiguration:LIBRARY_FILENAME"] ?? "");
+            string destinationFilePath = (_configuration["BotConfiguration:LIBRARY_FILEPATH"] ?? "") + (_configuration["BotConfiguration:LIBRARY_FILENAME"]?.Replace(".xlsx", DateTime.Now.ToString("_yyyy-MM-dd_HH-mm-ss") + ".xlsx") ?? "");
 
             if (File.Exists(sourceFilePath))
             {
